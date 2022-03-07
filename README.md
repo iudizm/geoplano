@@ -1,11 +1,17 @@
 # Geoplano
 Geoplano virtual com _Turtle Graphics_
 
-## Como rodar:
-Use o Python 3 para rodar o `geoplano.py`
+#### Para movimentar a caneta utilize as setas do seu teclado: ⬅⬆⬇➡
 
-Dependências do programa: `tkinter`
+![geoplano](src/geoplano.gif)
 
+## Como iniciar o Geoplano:
+Use o `Python 3` para rodar o `geoplano.py`
+
+* Depende do `tkinter`:
+  * Caso não tenha instalado, rode `pip install tk`
+  * No Linux, talvez necessite do pacote `python3-tk`
+  
 ## A fazer:
 
 * [x] Iniciar com a caneta em um ponto do Geoplano.
@@ -13,5 +19,3 @@ Dependências do programa: `tkinter`
 * [x] Adicionar movimentação pelo teclado.
 * [ ] Criar botões para voltar e avançar movimentos.
 * [ ] Permitir movimentar a caneta sem desenhar. (barra de espaço?)
-
-![geoplano](src/geoplano.gif)
