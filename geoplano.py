@@ -18,7 +18,7 @@ NOTE_CONTENT = "Sugestão de atividade: Desenhe um retângulo que tenha 12 quadr
 def defScreen():
     screen = turtle.Screen()
     screen.title("Geoplano")
-    screen.bgpic("fundo.png")
+    screen.bgpic("src/fundo.png")
     screen.setup(SCREEN_WIDTH, SCREEN_HEIGHT)
     screen.tracer(0)
     return screen

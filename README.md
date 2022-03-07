@@ -13,3 +13,5 @@ Dependências do programa: `tkinter`
 * [x] Adicionar movimentação pelo teclado.
 * [ ] Criar botões para voltar e avançar movimentos.
 * [ ] Permitir movimentar a caneta sem desenhar. (barra de espaço?)
+
+![geoplano](src/geoplano.gif)
