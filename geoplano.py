@@ -8,10 +8,12 @@ RIGHT_MOUSE_BUTTON = 3
 INITIAL_POSITION = (-47, 34)
 PEN_POSITIONS = []
 CURSOR_SIZE = 20
-FONT_SIZE = 16
-FONT = ('Arial', FONT_SIZE, 'bold')
+FONT_SIZE = 22
+FONT = ('Arial', FONT_SIZE, 'bold italic')
 HORIZONTAL_UNIT = 80.0
 VERTICAL_UNIT = 73.0
+NOTE_POSITION = (-600, 400)
+NOTE_CONTENT = "Sugestão de atividade: Desenhe um retângulo que tenha 12 quadrados de área."
 
 def defScreen():
     screen = turtle.Screen()
@@ -41,6 +43,14 @@ def setPenPosition(x, y):
 def clearAllDrawings(x, y):
     pen.clear()
 
+def createSuggestionNote():
+    note = turtle.Turtle()
+    note.ht()
+    note.penup()
+    note.color("white")
+    note.setpos(NOTE_POSITION)
+    note.write(NOTE_CONTENT, align="left", font=FONT)
+
 def goRight():
     x = pen.xcor() + HORIZONTAL_UNIT
     setPenPosition(x, pen.ycor())
@@ -59,6 +69,7 @@ def goDown():
 
 screen = defScreen()
 pen = defPen()
+createSuggestionNote()
 
 while True:
     screen.update()
